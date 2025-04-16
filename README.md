@@ -26,11 +26,44 @@ The project aims to offer hands-on understanding of RISC-V architecture, instruc
 
 ## **1. Tools Setup**
 
-### 1.1 Tools Used
-- **VS Code** – Writing and editing Verilog modules.  
-- **Icarus Verilog** – Compiling Verilog files.  
-- **GTKWave** – Waveform analysis.  
-- **Yosys** – RTL synthesis and netlist generation.  
+### **1.1.1 VS Code**
+**VS Code** is a **lightweight and powerful code editor** used for writing, debugging, and managing Verilog and VLSI design files.  
+It offers **extensions for syntax highlighting, simulation, and debugging** to enhance the HDL design workflow.
+
+### **Installation Steps**
+```bash
+sudo apt update
+sudo apt install code
+```
+
+### **1.1.2 Icarus Verilog (Iverilog)**
+**Icarus Verilog (Iverilog)** is an **open-source Verilog simulator** used for compiling and simulating digital designs.  
+It is widely used in **VLSI design, FPGA development, and digital logic verification**.
+
+### **Installation Steps**
+```bash
+git clone https://github.com/steveicarus/iverilog.git
+cd iverilog
+sh autoconf.sh
+./configure
+make
+sudo make install
+```
+
+### **1.1.3 GTKWave**
+**GTKWave** is an **open-source waveform viewer** used for analyzing **digital simulation outputs** from Verilog and VHDL simulations.  
+It supports **VCD (Value Change Dump), LXT, LXT2, FST**, and other common waveform formats.
+
+### **Installation Steps**
+```bash
+git clone https://github.com/gtkwave/gtkwave.git
+cd gtkwave
+./configure
+make
+sudo make install
+```
+
+📌 **Here ends the Tools and PDK setup** 
 
 ---
 
